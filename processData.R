@@ -1,5 +1,5 @@
 go = function(){
-  df = read.delim("household_power_consumption.txt",sep=";")
+  df = read.delim("../household_power_consumption.txt",sep=";")
   df$DateTime <- paste(as.character(df$Date),as.character(df$Time))
   df$DateTime <- strptime(df$DateTime,"%d/%m/%Y %H:%M:%S")
   df$Date <- as.Date(df$Date,"%d/%m/%Y")

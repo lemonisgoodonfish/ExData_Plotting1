@@ -1,3 +1,4 @@
+# load processData first and run df = go() before running this file an other plot files
 png(filename="plot3.png",width=480,height=480)
 plotColors <- c("black", "red", "blue")
 lineLabels <- c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
